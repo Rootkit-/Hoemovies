@@ -1,3 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="gooey">
+                <!-- in="sourceGraphic" -->
+                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
+                <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+            </filter>
+        </defs>
+    </svg>
+<div class="float">
+    <a href="https://rootkit-.github.io/Hoemovies/tv/index.html">
+  <button id="gooey-button"> Switch to My TV Shows <span class="bubbles">
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+    </span>
+  </button>
+  </a>
+  <div class="link-buttons grayscale padder">
+    <a href="https://www.themoviedb.org" class="link-button">
+      <img src="../img/themoviedb.png">
+    </a>
+  </div>
+  <div class="link-buttons grayscale padder">
+    <a href="https://www.imdb.com" class="link-button">
+      <img src="../img/imdb.png">
+    </a>
+  </div>
+  <div class="link-buttons grayscale padder">
+    <a href="https://www.rottentomatoes.com" class="link-button">
+      <img src="../img/tomatoes.png">
+    </a>
+  </div>
+  </div>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,23 +47,24 @@
     <link href="../emdb.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div id="top" class="container">      
 
-        <div class="navigation-bar">
-            <div class="left">
-                <a href="../index.html" class="button-darkgray">EMDB</a>
-                <div class="arrow">&gt;</div>
-                <a href="./war.html" class="button-darkgray">Genres</a>
-                <div class="arrow">&gt;</div>
-                <a href="./war.html" class="button-darkgray">War</a>
-            </div>
+
+<div id="top" class='containers'>
+        <div class="titles">
+           <span>H</span><span>o</span><span>e</span><span>&nbsp;T</span><span>V</span><span>&nbsp;S</span><span>h</span><span>o</span><span>w</span><span>s</span>
         </div>
+            <div class="right">
+            
+            <a href="../index.html" class="button-darkgray">Main Page</a>
+            <a href="../years.html" class="button-darkgray">Years</a>
+            </div>
+</div>
+    <div id="top" class="container">
 
-        <div class="bar"></div>
         <div class="title">Movies per genre</div>
 
         <div class="header-buttons">
-            <a href="./action.html" class="button-darkgray">Action</a><a href="./thriller.html" class="button-darkgray">Thriller</a><a href="./horror.html" class="button-darkgray">Horror</a><a href="./drama.html" class="button-darkgray">Drama</a><a href="./sci-fi.html" class="button-darkgray">Sci-Fi</a><a href="./music.html" class="button-darkgray">Music</a><a href="./comedy.html" class="button-darkgray">Comedy</a><a href="./adventure.html" class="button-darkgray">Adventure</a><a href="./war.html" class="button-darkgray">War</a><a href="./fantasy.html" class="button-darkgray">Fantasy</a><a href="./crime.html" class="button-darkgray">Crime</a><a href="./animation.html" class="button-darkgray">Animation</a><a href="./family.html" class="button-darkgray">Family</a><a href="./documentary.html" class="button-darkgray">Documentary</a><a href="./western.html" class="button-darkgray">Western</a><a href="./romance.html" class="button-darkgray">Romance</a><a href="./mystery.html" class="button-darkgray">Mystery</a><a href="./sport.html" class="button-darkgray">Sport</a><a href="./history.html" class="button-darkgray">History</a><a href="./biography.html" class="button-darkgray">Biography</a><a href="./short.html" class="button-darkgray">Short</a><a href="./musical.html" class="button-darkgray">Musical</a>
+            <a href="./action.html" class="button-darkgray">Action</a><a href="./thriller.html" class="button-darkgray">Thriller</a><a href="./horror.html" class="button-darkgray">Horror</a><a href="./drama.html" class="button-darkgray">Drama</a><a href="./sci-fi.html" class="button-darkgray">Sci-Fi</a><a href="./music.html" class="button-darkgray">Music</a><a href="./comedy.html" class="button-darkgray">Comedy</a><a href="./adventure.html" class="button-darkgray">Adventure</a><a href="./war.html" class="button-darkgray">War</a><a href="./fantasy.html" class="button-darkgray">Fantasy</a><a href="./crime.html" class="button-darkgray">Crime</a><a href="./animation.html" class="button-darkgray">Animation</a><a href="./family.html" class="button-darkgray">Family</a><a href="./documentary.html" class="button-darkgray">Documentary</a><a href="./western.html" class="button-darkgray">Western</a><a href="./romance.html" class="button-darkgray">Romance</a><a href="./mystery.html" class="button-darkgray">Mystery</a><a href="./sport.html" class="button-darkgray">Sport</a><a href="./history.html" class="button-darkgray">History</a><a href="./biography.html" class="button-darkgray">Biography</a><a href="./short.html" class="button-darkgray">Short</a><a href="./film-noir.html" class="button-darkgray">Film-Noir</a><a href="./musical.html" class="button-darkgray">Musical</a>
         </div>
 
         <div class="header-green">
@@ -31,284 +74,342 @@
 
         </div>
         <ul class="link-gray movie-list"><li class="thumbnail">
-    <a href="../movies/35.html">
-        <div class="shiny-container" >
-            <img src="../covers/000056.jpg" alt="poster American Sniper&nbsp;&nbsp;(2014)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            American Sniper&nbsp;&nbsp;(2014)
-        </div>
-    </a>
+  <a href="../movies/539.html">
+    <div class="shiny-container">
+      <img src="../covers/000636.jpg" alt="poster Allied&nbsp;&nbsp;(2016)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Allied&nbsp;&nbsp;(2016) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/664.html">
-        <div class="shiny-container" >
-            <img src="../covers/001216.jpg" alt="poster Apocalypse Now&nbsp;&nbsp;(1979)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Apocalypse Now&nbsp;&nbsp;(1979)
-        </div>
-    </a>
+  <a href="../movies/26.html">
+    <div class="shiny-container">
+      <img src="../covers/000049.jpg" alt="poster American Sniper&nbsp;&nbsp;(2014)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> American Sniper&nbsp;&nbsp;(2014) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/500.html">
-        <div class="shiny-container" >
-            <img src="../covers/000815.jpg" alt="poster Battle for Sevastopol&nbsp;&nbsp;(2015)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Battle for Sevastopol&nbsp;&nbsp;(2015)
-        </div>
-    </a>
+  <a href="../movies/1122.html">
+    <div class="shiny-container">
+      <img src="../covers/001392.jpg" alt="poster Apocalypse Now&nbsp;&nbsp;(1979)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Apocalypse Now&nbsp;&nbsp;(1979) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/62.html">
-        <div class="shiny-container" >
-            <img src="../covers/000091.jpg" alt="poster Behind Enemy Lines&nbsp;&nbsp;(2001)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Behind Enemy Lines&nbsp;&nbsp;(2001)
-        </div>
-    </a>
+  <a href="../movies/516.html">
+    <div class="shiny-container">
+      <img src="../covers/000601.jpg" alt="poster Battle for Sevastopol&nbsp;&nbsp;(2015)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Battle for Sevastopol&nbsp;&nbsp;(2015) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/65.html">
-        <div class="shiny-container" >
-            <img src="../covers/000096.jpg" alt="poster Black Hawk Down&nbsp;&nbsp;(2001)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Black Hawk Down&nbsp;&nbsp;(2001)
-        </div>
-    </a>
+  <a href="../movies/46.html">
+    <div class="shiny-container">
+      <img src="../covers/000075.jpg" alt="poster Behind Enemy Lines&nbsp;&nbsp;(2001)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Behind Enemy Lines&nbsp;&nbsp;(2001) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/1029.html">
-        <div class="shiny-container" >
-            <img src="../covers/001662.jpg" alt="poster Braveheart&nbsp;&nbsp;(1995)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Braveheart&nbsp;&nbsp;(1995)
-        </div>
-    </a>
+  <a href="../movies/1015.html">
+    <div class="shiny-container">
+      <img src="../covers/001268.jpg" alt="poster Black Hawk Down&nbsp;&nbsp;(2001)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Black Hawk Down&nbsp;&nbsp;(2001) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/1033.html">
-        <div class="shiny-container" >
-            <img src="../covers/001666.jpg" alt="poster Crimson Tide&nbsp;&nbsp;(1995)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Crimson Tide&nbsp;&nbsp;(1995)
-        </div>
-    </a>
+  <a href="../movies/58.html">
+    <div class="shiny-container">
+      <img src="../covers/000088.jpg" alt="poster Braveheart&nbsp;&nbsp;(1995)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Braveheart&nbsp;&nbsp;(1995) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/120.html">
-        <div class="shiny-container" >
-            <img src="../covers/000184.jpg" alt="poster Downfall&nbsp;&nbsp;(2004)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Downfall&nbsp;&nbsp;(2004)
-        </div>
-    </a>
+  <a href="../movies/576.html">
+    <div class="shiny-container">
+      <img src="../covers/000696.jpg" alt="poster Courage Under Fire&nbsp;&nbsp;(1996)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Courage Under Fire&nbsp;&nbsp;(1996) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/134.html">
-        <div class="shiny-container" >
-            <img src="../covers/000199.jpg" alt="poster Enemy at the Gates&nbsp;&nbsp;(2001)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Enemy at the Gates&nbsp;&nbsp;(2001)
-        </div>
-    </a>
+  <a href="../movies/82.html">
+    <div class="shiny-container">
+      <img src="../covers/000114.jpg" alt="poster Crimson Tide&nbsp;&nbsp;(1995)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Crimson Tide&nbsp;&nbsp;(1995) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/666.html">
-        <div class="shiny-container" >
-            <img src="../covers/001218.jpg" alt="poster Full Metal Jacket&nbsp;&nbsp;(1987)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Full Metal Jacket&nbsp;&nbsp;(1987)
-        </div>
-    </a>
+  <a href="../movies/592.html">
+    <div class="shiny-container">
+      <img src="../covers/000718.jpg" alt="poster Defiance&nbsp;&nbsp;(2008)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Defiance&nbsp;&nbsp;(2008) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/161.html">
-        <div class="shiny-container" >
-            <img src="../covers/000235.jpg" alt="poster Fury&nbsp;&nbsp;(2014)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Fury&nbsp;&nbsp;(2014)
-        </div>
-    </a>
+  <a href="../movies/110.html">
+    <div class="shiny-container">
+      <img src="../covers/000146.jpg" alt="poster Downfall&nbsp;&nbsp;(2004)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Downfall&nbsp;&nbsp;(2004) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/981.html">
-        <div class="shiny-container" >
-            <img src="../covers/001614.jpg" alt="poster The Imitation Game&nbsp;&nbsp;(2014)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            The Imitation Game&nbsp;&nbsp;(2014)
-        </div>
-    </a>
+  <a href="../movies/600.html">
+    <div class="shiny-container">
+      <img src="../covers/000726.jpg" alt="poster Dunkirk&nbsp;&nbsp;(2017)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Dunkirk&nbsp;&nbsp;(2017) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/213.html">
-        <div class="shiny-container" >
-            <img src="../covers/000312.jpg" alt="poster Inglourious Basterds&nbsp;&nbsp;(2009)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Inglourious Basterds&nbsp;&nbsp;(2009)
-        </div>
-    </a>
+  <a href="../movies/125.html">
+    <div class="shiny-container">
+      <img src="../covers/000161.jpg" alt="poster Enemy at the Gates&nbsp;&nbsp;(2001)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Enemy at the Gates&nbsp;&nbsp;(2001) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/711.html">
-        <div class="shiny-container" >
-            <img src="../covers/001268.jpg" alt="poster Last Flag Flying&nbsp;&nbsp;(2017)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Last Flag Flying&nbsp;&nbsp;(2017)
-        </div>
-    </a>
+  <a href="../movies/630.html">
+    <div class="shiny-container">
+      <img src="../covers/000757.jpg" alt="poster Free State of Jones&nbsp;&nbsp;(2016)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Free State of Jones&nbsp;&nbsp;(2016) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/253.html">
-        <div class="shiny-container" >
-            <img src="../covers/000394.jpg" alt="poster Master and Commander: The Far Side of the World&nbsp;&nbsp;(2003)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Master and Commander: The Far Side of the World&nbsp;&nbsp;(2003)
-        </div>
-    </a>
+  <a href="../movies/634.html">
+    <div class="shiny-container">
+      <img src="../covers/000761.jpg" alt="poster Full Metal Jacket&nbsp;&nbsp;(1987)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Full Metal Jacket&nbsp;&nbsp;(1987) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/280.html">
-        <div class="shiny-container" >
-            <img src="../covers/000457.jpg" alt="poster Official Secrets&nbsp;&nbsp;(2019)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Official Secrets&nbsp;&nbsp;(2019)
-        </div>
-    </a>
+  <a href="../movies/152.html">
+    <div class="shiny-container">
+      <img src="../covers/000188.jpg" alt="poster Fury&nbsp;&nbsp;(2014)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Fury&nbsp;&nbsp;(2014) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/282.html">
-        <div class="shiny-container" >
-            <img src="../covers/000467.jpg" alt="poster Pan's Labyrinth&nbsp;&nbsp;(2006)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Pan's Labyrinth&nbsp;&nbsp;(2006)
-        </div>
-    </a>
+  <a href="../movies/649.html">
+    <div class="shiny-container">
+      <img src="../covers/000777.jpg" alt="poster Green Zone&nbsp;&nbsp;(2010)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Green Zone&nbsp;&nbsp;(2010) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/1105.html">
-        <div class="shiny-container" >
-            <img src="../covers/001738.jpg" alt="poster The Patriot&nbsp;&nbsp;(2000)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            The Patriot&nbsp;&nbsp;(2000)
-        </div>
-    </a>
+  <a href="../movies/403.html">
+    <div class="shiny-container">
+      <img src="../covers/000474.jpg" alt="poster The Imitation Game&nbsp;&nbsp;(2014)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> The Imitation Game&nbsp;&nbsp;(2014) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/1074.html">
-        <div class="shiny-container" >
-            <img src="../covers/001707.jpg" alt="poster Platoon&nbsp;&nbsp;(1986)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Platoon&nbsp;&nbsp;(1986)
-        </div>
-    </a>
+  <a href="../movies/205.html">
+    <div class="shiny-container">
+      <img src="../covers/000245.jpg" alt="poster Inglourious Basterds&nbsp;&nbsp;(2009)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Inglourious Basterds&nbsp;&nbsp;(2009) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/635.html">
-        <div class="shiny-container" >
-            <img src="../covers/001186.jpg" alt="poster Saving Private Ryan&nbsp;&nbsp;(1998)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Saving Private Ryan&nbsp;&nbsp;(1998)
-        </div>
-    </a>
+  <a href="../movies/1151.html">
+    <div class="shiny-container">
+      <img src="../covers/001421.jpg" alt="poster Kingdom of Heaven&nbsp;&nbsp;(2005)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Kingdom of Heaven&nbsp;&nbsp;(2005) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/976.html">
-        <div class="shiny-container" >
-            <img src="../covers/001609.jpg" alt="poster Stripes&nbsp;&nbsp;(1981)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Stripes&nbsp;&nbsp;(1981)
-        </div>
-    </a>
+  <a href="../movies/711.html">
+    <div class="shiny-container">
+      <img src="../covers/000844.jpg" alt="poster Last Flag Flying&nbsp;&nbsp;(2017)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Last Flag Flying&nbsp;&nbsp;(2017) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/450.html">
-        <div class="shiny-container" >
-            <img src="../covers/000743.jpg" alt="poster The Sum of All Fears&nbsp;&nbsp;(2002)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            The Sum of All Fears&nbsp;&nbsp;(2002)
-        </div>
-    </a>
+  <a href="../movies/716.html">
+    <div class="shiny-container">
+      <img src="../covers/000851.jpg" alt="poster Lincoln&nbsp;&nbsp;(2012)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Lincoln&nbsp;&nbsp;(2012) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/457.html">
-        <div class="shiny-container" >
-            <img src="../covers/000753.jpg" alt="poster Timeline&nbsp;&nbsp;(2003)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Timeline&nbsp;&nbsp;(2003)
-        </div>
-    </a>
+  <a href="../movies/1020.html">
+    <div class="shiny-container">
+      <img src="../covers/001276.jpg" alt="poster Master and Commander: The Far Side of the World&nbsp;&nbsp;(2003)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Master and Commander: The Far Side of the World&nbsp;&nbsp;(2003) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/467.html">
-        <div class="shiny-container" >
-            <img src="../covers/000767.jpg" alt="poster Tropic Thunder&nbsp;&nbsp;(2008)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Tropic Thunder&nbsp;&nbsp;(2008)
-        </div>
-    </a>
+  <a href="../movies/280.html">
+    <div class="shiny-container">
+      <img src="../covers/000334.jpg" alt="poster Official Secrets&nbsp;&nbsp;(2019)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Official Secrets&nbsp;&nbsp;(2019) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/1122.html">
-        <div class="shiny-container" >
-            <img src="../covers/001755.jpg" alt="poster Wonder Woman&nbsp;&nbsp;(2017)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Wonder Woman&nbsp;&nbsp;(2017)
-        </div>
-    </a>
+  <a href="../movies/286.html">
+    <div class="shiny-container">
+      <img src="../covers/000340.jpg" alt="poster Pan's Labyrinth&nbsp;&nbsp;(2006)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Pan's Labyrinth&nbsp;&nbsp;(2006) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/415.html">
+    <div class="shiny-container">
+      <img src="../covers/000488.jpg" alt="poster The Patriot&nbsp;&nbsp;(2000)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> The Patriot&nbsp;&nbsp;(2000) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/293.html">
+    <div class="shiny-container">
+      <img src="../covers/000348.jpg" alt="poster Platoon&nbsp;&nbsp;(1986)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Platoon&nbsp;&nbsp;(1986) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/1156.html">
+    <div class="shiny-container">
+      <img src="../covers/001426.jpg" alt="poster Rur&#244;ni Kenshin: Meiji kenkaku roman tan&nbsp;&nbsp;(2012)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Rur&#244;ni Kenshin: Meiji kenkaku roman tan&nbsp;&nbsp;(2012) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/813.html">
+    <div class="shiny-container">
+      <img src="../covers/000987.jpg" alt="poster Saving Private Ryan&nbsp;&nbsp;(1998)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Saving Private Ryan&nbsp;&nbsp;(1998) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/358.html">
+    <div class="shiny-container">
+      <img src="../covers/000424.jpg" alt="poster Stripes&nbsp;&nbsp;(1981)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Stripes&nbsp;&nbsp;(1981) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/463.html">
+    <div class="shiny-container">
+      <img src="../covers/000541.jpg" alt="poster The Sum of All Fears&nbsp;&nbsp;(2002)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> The Sum of All Fears&nbsp;&nbsp;(2002) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/856.html">
+    <div class="shiny-container">
+      <img src="../covers/001047.jpg" alt="poster Tears of the Sun&nbsp;&nbsp;(2003)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Tears of the Sun&nbsp;&nbsp;(2003) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/471.html">
+    <div class="shiny-container">
+      <img src="../covers/000549.jpg" alt="poster Timeline&nbsp;&nbsp;(2003)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Timeline&nbsp;&nbsp;(2003) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/482.html">
+    <div class="shiny-container">
+      <img src="../covers/000560.jpg" alt="poster Tropic Thunder&nbsp;&nbsp;(2008)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Tropic Thunder&nbsp;&nbsp;(2008) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/1025.html">
+    <div class="shiny-container">
+      <img src="../covers/001282.jpg" alt="poster Valkyrie&nbsp;&nbsp;(2008)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Valkyrie&nbsp;&nbsp;(2008) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/502.html">
+    <div class="shiny-container">
+      <img src="../covers/000586.jpg" alt="poster Wonder Woman&nbsp;&nbsp;(2017)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Wonder Woman&nbsp;&nbsp;(2017) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/981.html">
+    <div class="shiny-container">
+      <img src="../covers/001202.jpg" alt="poster Zero Dark Thirty&nbsp;&nbsp;(2012)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Zero Dark Thirty&nbsp;&nbsp;(2012) </div>
+  </a>
 </li>
 </ul>
 
         <div class="footer">
-            <p>Created with EMDB V5.07 (C) 2005-2022. No Rights Reserved ;-)</p>
+            <p>Created with EMDB V5.17 (C) 2005-2023. No Rights Reserved ;-)</p>
         </div>
     </div>
 </body>

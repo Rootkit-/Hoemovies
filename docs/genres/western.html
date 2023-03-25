@@ -1,3 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="gooey">
+                <!-- in="sourceGraphic" -->
+                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
+                <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+            </filter>
+        </defs>
+    </svg>
+<div class="float">
+    <a href="https://rootkit-.github.io/Hoemovies/tv/index.html">
+  <button id="gooey-button"> Switch to My TV Shows <span class="bubbles">
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+    </span>
+  </button>
+  </a>
+  <div class="link-buttons grayscale padder">
+    <a href="https://www.themoviedb.org" class="link-button">
+      <img src="../img/themoviedb.png">
+    </a>
+  </div>
+  <div class="link-buttons grayscale padder">
+    <a href="https://www.imdb.com" class="link-button">
+      <img src="../img/imdb.png">
+    </a>
+  </div>
+  <div class="link-buttons grayscale padder">
+    <a href="https://www.rottentomatoes.com" class="link-button">
+      <img src="../img/tomatoes.png">
+    </a>
+  </div>
+  </div>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,23 +47,24 @@
     <link href="../emdb.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div id="top" class="container">      
 
-        <div class="navigation-bar">
-            <div class="left">
-                <a href="../index.html" class="button-darkgray">EMDB</a>
-                <div class="arrow">&gt;</div>
-                <a href="./western.html" class="button-darkgray">Genres</a>
-                <div class="arrow">&gt;</div>
-                <a href="./western.html" class="button-darkgray">Western</a>
-            </div>
+
+<div id="top" class='containers'>
+        <div class="titles">
+           <span>H</span><span>o</span><span>e</span><span>&nbsp;T</span><span>V</span><span>&nbsp;S</span><span>h</span><span>o</span><span>w</span><span>s</span>
         </div>
+            <div class="right">
+            
+            <a href="../index.html" class="button-darkgray">Main Page</a>
+            <a href="../years.html" class="button-darkgray">Years</a>
+            </div>
+</div>
+    <div id="top" class="container">
 
-        <div class="bar"></div>
         <div class="title">Movies per genre</div>
 
         <div class="header-buttons">
-            <a href="./action.html" class="button-darkgray">Action</a><a href="./thriller.html" class="button-darkgray">Thriller</a><a href="./horror.html" class="button-darkgray">Horror</a><a href="./drama.html" class="button-darkgray">Drama</a><a href="./sci-fi.html" class="button-darkgray">Sci-Fi</a><a href="./music.html" class="button-darkgray">Music</a><a href="./comedy.html" class="button-darkgray">Comedy</a><a href="./adventure.html" class="button-darkgray">Adventure</a><a href="./war.html" class="button-darkgray">War</a><a href="./fantasy.html" class="button-darkgray">Fantasy</a><a href="./crime.html" class="button-darkgray">Crime</a><a href="./animation.html" class="button-darkgray">Animation</a><a href="./family.html" class="button-darkgray">Family</a><a href="./documentary.html" class="button-darkgray">Documentary</a><a href="./western.html" class="button-darkgray">Western</a><a href="./romance.html" class="button-darkgray">Romance</a><a href="./mystery.html" class="button-darkgray">Mystery</a><a href="./sport.html" class="button-darkgray">Sport</a><a href="./history.html" class="button-darkgray">History</a><a href="./biography.html" class="button-darkgray">Biography</a><a href="./short.html" class="button-darkgray">Short</a><a href="./musical.html" class="button-darkgray">Musical</a>
+            <a href="./action.html" class="button-darkgray">Action</a><a href="./thriller.html" class="button-darkgray">Thriller</a><a href="./horror.html" class="button-darkgray">Horror</a><a href="./drama.html" class="button-darkgray">Drama</a><a href="./sci-fi.html" class="button-darkgray">Sci-Fi</a><a href="./music.html" class="button-darkgray">Music</a><a href="./comedy.html" class="button-darkgray">Comedy</a><a href="./adventure.html" class="button-darkgray">Adventure</a><a href="./war.html" class="button-darkgray">War</a><a href="./fantasy.html" class="button-darkgray">Fantasy</a><a href="./crime.html" class="button-darkgray">Crime</a><a href="./animation.html" class="button-darkgray">Animation</a><a href="./family.html" class="button-darkgray">Family</a><a href="./documentary.html" class="button-darkgray">Documentary</a><a href="./western.html" class="button-darkgray">Western</a><a href="./romance.html" class="button-darkgray">Romance</a><a href="./mystery.html" class="button-darkgray">Mystery</a><a href="./sport.html" class="button-darkgray">Sport</a><a href="./history.html" class="button-darkgray">History</a><a href="./biography.html" class="button-darkgray">Biography</a><a href="./short.html" class="button-darkgray">Short</a><a href="./film-noir.html" class="button-darkgray">Film-Noir</a><a href="./musical.html" class="button-darkgray">Musical</a>
         </div>
 
         <div class="header-green">
@@ -31,141 +74,180 @@
 
         </div>
         <ul class="link-gray movie-list"><li class="thumbnail">
-    <a href="../movies/563.html">
-        <div class="shiny-container" >
-            <img src="../covers/001018.jpg" alt="poster The Assassination of Jesse James by the Coward Robert Ford&nbsp;&nbsp;(2007)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            The Assassination of Jesse James by the Coward Robert Ford&nbsp;&nbsp;(2007)
-        </div>
-    </a>
+  <a href="../movies/1112.html">
+    <div class="shiny-container">
+      <img src="../covers/001381.jpg" alt="poster 3:10 to Yuma&nbsp;&nbsp;(2007)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> 3:10 to Yuma&nbsp;&nbsp;(2007) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/418.html">
-        <div class="shiny-container" >
-            <img src="../covers/000698.jpg" alt="poster The Ballad of Buster Scruggs&nbsp;&nbsp;(2018)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            The Ballad of Buster Scruggs&nbsp;&nbsp;(2018)
-        </div>
-    </a>
+  <a href="../movies/870.html">
+    <div class="shiny-container">
+      <img src="../covers/001062.jpg" alt="poster The Assassination of Jesse James by the Coward Robert Ford&nbsp;&nbsp;(2007)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> The Assassination of Jesse James by the Coward Robert Ford&nbsp;&nbsp;(2007) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/507.html">
-        <div class="shiny-container" >
-            <img src="../covers/000901.jpg" alt="poster Cowboys & Aliens&nbsp;&nbsp;(2011)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Cowboys & Aliens&nbsp;&nbsp;(2011)
-        </div>
-    </a>
+  <a href="../movies/430.html">
+    <div class="shiny-container">
+      <img src="../covers/000506.jpg" alt="poster The Ballad of Buster Scruggs&nbsp;&nbsp;(2018)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> The Ballad of Buster Scruggs&nbsp;&nbsp;(2018) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/385.html">
-        <div class="shiny-container" >
-            <img src="../covers/000634.jpg" alt="poster The Devil's Rejects&nbsp;&nbsp;(2005)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            The Devil's Rejects&nbsp;&nbsp;(2005)
-        </div>
-    </a>
+  <a href="../movies/577.html">
+    <div class="shiny-container">
+      <img src="../covers/000697.jpg" alt="poster Cowboys & Aliens&nbsp;&nbsp;(2011)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Cowboys & Aliens&nbsp;&nbsp;(2011) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/1100.html">
-        <div class="shiny-container" >
-            <img src="../covers/001733.jpg" alt="poster The Good, the Bad and the Ugly&nbsp;&nbsp;(1966)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            The Good, the Bad and the Ugly&nbsp;&nbsp;(1966)
-        </div>
-    </a>
+  <a href="../movies/884.html">
+    <div class="shiny-container">
+      <img src="../covers/001078.jpg" alt="poster The Dark Tower&nbsp;&nbsp;(2017)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> The Dark Tower&nbsp;&nbsp;(2017) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/740.html">
-        <div class="shiny-container" >
-            <img src="../covers/001298.jpg" alt="poster The Magnificent Seven&nbsp;&nbsp;(2016)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            The Magnificent Seven&nbsp;&nbsp;(2016)
-        </div>
-    </a>
+  <a href="../movies/91.html">
+    <div class="shiny-container">
+      <img src="../covers/000127.jpg" alt="poster Desperado&nbsp;&nbsp;(1995)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Desperado&nbsp;&nbsp;(1995) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/27.html">
-        <div class="shiny-container" >
-            <img src="../covers/000037.jpg" alt="poster A Million Ways to Die in the West&nbsp;&nbsp;(2014)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            A Million Ways to Die in the West&nbsp;&nbsp;(2014)
-        </div>
-    </a>
+  <a href="../movies/398.html">
+    <div class="shiny-container">
+      <img src="../covers/000466.jpg" alt="poster The Devil's Rejects&nbsp;&nbsp;(2005)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> The Devil's Rejects&nbsp;&nbsp;(2005) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/329.html">
-        <div class="shiny-container" >
-            <img src="../covers/000542.jpg" alt="poster Shanghai Noon&nbsp;&nbsp;(2000)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Shanghai Noon&nbsp;&nbsp;(2000)
-        </div>
-    </a>
+  <a href="../movies/630.html">
+    <div class="shiny-container">
+      <img src="../covers/000757.jpg" alt="poster Free State of Jones&nbsp;&nbsp;(2016)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Free State of Jones&nbsp;&nbsp;(2016) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/460.html">
-        <div class="shiny-container" >
-            <img src="../covers/000756.jpg" alt="poster Tombstone&nbsp;&nbsp;(1993)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Tombstone&nbsp;&nbsp;(1993)
-        </div>
-    </a>
+  <a href="../movies/402.html">
+    <div class="shiny-container">
+      <img src="../covers/000471.jpg" alt="poster The Good, the Bad and the Ugly&nbsp;&nbsp;(1966)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> The Good, the Bad and the Ugly&nbsp;&nbsp;(1966) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/680.html">
-        <div class="shiny-container" >
-            <img src="../covers/001233.jpg" alt="poster Unforgiven&nbsp;&nbsp;(1992)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Unforgiven&nbsp;&nbsp;(1992)
-        </div>
-    </a>
+  <a href="../movies/442.html">
+    <div class="shiny-container">
+      <img src="../covers/000519.jpg" alt="poster The Hateful Eight&nbsp;&nbsp;(2015)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> The Hateful Eight&nbsp;&nbsp;(2015) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/485.html">
-        <div class="shiny-container" >
-            <img src="../covers/000795.jpg" alt="poster Wild Wild West&nbsp;&nbsp;(1999)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Wild Wild West&nbsp;&nbsp;(1999)
-        </div>
-    </a>
+  <a href="../movies/919.html">
+    <div class="shiny-container">
+      <img src="../covers/001116.jpg" alt="poster The Magnificent Seven&nbsp;&nbsp;(2016)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> The Magnificent Seven&nbsp;&nbsp;(2016) </div>
+  </a>
 </li>
 <li class="thumbnail">
-    <a href="../movies/497.html">
-        <div class="shiny-container" >
-            <img src="../covers/000810.jpg" alt="poster Young Guns&nbsp;&nbsp;(1988)" height="135">
-            <div class="shiny-frame"></div>
-        </div>
-        <div class="thumbnail-text">
-            Young Guns&nbsp;&nbsp;(1988)
-        </div>
-    </a>
+  <a href="../movies/17.html">
+    <div class="shiny-container">
+      <img src="../covers/000038.jpg" alt="poster A Million Ways to Die in the West&nbsp;&nbsp;(2014)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> A Million Ways to Die in the West&nbsp;&nbsp;(2014) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/938.html">
+    <div class="shiny-container">
+      <img src="../covers/001139.jpg" alt="poster The Revenant&nbsp;&nbsp;(2015)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> The Revenant&nbsp;&nbsp;(2015) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/334.html">
+    <div class="shiny-container">
+      <img src="../covers/000394.jpg" alt="poster Shanghai Noon&nbsp;&nbsp;(2000)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Shanghai Noon&nbsp;&nbsp;(2000) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/954.html">
+    <div class="shiny-container">
+      <img src="../covers/001160.jpg" alt="poster Tombstone&nbsp;&nbsp;(1993)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Tombstone&nbsp;&nbsp;(1993) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/969.html">
+    <div class="shiny-container">
+      <img src="../covers/001181.jpg" alt="poster Unforgiven&nbsp;&nbsp;(1992)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Unforgiven&nbsp;&nbsp;(1992) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/498.html">
+    <div class="shiny-container">
+      <img src="../covers/000582.jpg" alt="poster Wild Wild West&nbsp;&nbsp;(1999)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Wild Wild West&nbsp;&nbsp;(1999) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/501.html">
+    <div class="shiny-container">
+      <img src="../covers/000585.jpg" alt="poster Wind River&nbsp;&nbsp;(2017)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Wind River&nbsp;&nbsp;(2017) </div>
+  </a>
+</li>
+<li class="thumbnail">
+  <a href="../movies/512.html">
+    <div class="shiny-container">
+      <img src="../covers/000596.jpg" alt="poster Young Guns&nbsp;&nbsp;(1988)" height="135">
+      <div class="shiny-frame"></div>
+    </div>
+    <div class="thumbnail-text"> Young Guns&nbsp;&nbsp;(1988) </div>
+  </a>
 </li>
 </ul>
 
         <div class="footer">
-            <p>Created with EMDB V5.07 (C) 2005-2022. No Rights Reserved ;-)</p>
+            <p>Created with EMDB V5.17 (C) 2005-2023. No Rights Reserved ;-)</p>
         </div>
     </div>
 </body>
