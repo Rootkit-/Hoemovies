@@ -1,3 +1,10 @@
+Element.prototype.appendBefore = function (element) {
+    element.parentNode.insertBefore(this, element);
+}, false;
+
+Element.prototype.appendAfter = function (element) {
+    element.parentNode.insertBefore(this, element.nextSibling);
+}, false;
 
 const fetchSafe = (url) => {
     return new Promise((resolve, reject) => {
@@ -46,7 +53,7 @@ const findtv = (test) => {
     });
 };
 //https://api.themoviedb.org/3/find/tt3475734?api_key=63106a4799ac2ed1fdc3b8bae2c353d6&language=en-US&external_source=imdb_id
-const printAddress = async () => {
+const printAddresss = async () => {
     var ssss = document.querySelector("body > div > div.title > div > a >img[src='../img/imdb.png']")
     if(ssss){
         var urls = ssss.parentNode.href;
@@ -60,4 +67,8 @@ const printAddress = async () => {
         }
     }
 };
-printAddress();
+printAddresss();
+window.addEventListener("load", (event) => {
+    printAddresss();
+  console.log("page is fully loaded");
+});
