@@ -24,9 +24,12 @@ const loadMovie = (test) => {
     .then((response) => response.json())
     .then((results) => {
         console.log(results.results[0].key);
-        const as = document.createElement("div");
-        as.innerHTML = '<iframe width="640" height="360" src="https://www.youtube.com/embed/' + results.results[0].key + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
-        as.appendAfter(document.querySelector("body > div.container > div.movie-container > div.right > p:nth-child(3)"))
+        //const as = document.createElement("div");
+       //as.innerHTML = '<iframe width="640" height="360" src="https://www.youtube.com/embed/' + results.results[0].key + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+      //as.appendAfter(document.querySelector("body > div.container > div.movie-container > div.right > p:nth-child(3)"))
+		//document.querySelector("div.if > iframe").src = "https://www.youtube.com/embed/" + results.results[0].key 
+			top.document.getElementById('if').setAttribute("src","https://www.youtube.com/embed/" + results.results[0].key);
+            document.querySelector("div.if").style.display = 'block'
         return results.results[0].key;
     });
 };
@@ -35,9 +38,11 @@ const loadTV = (test) => {
     .then((response) => response.json())
     .then((results) => {
         console.log(results.results[0].key);
-        const as = document.createElement("div");
-        as.innerHTML = '<iframe width="640" height="360" src="https://www.youtube.com/embed/' + results.results[0].key + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
-        as.appendAfter(document.querySelector("body > div.container > div.movie-container > div.right > p:nth-child(3)"))
+        //const as = document.createElement("div");
+        //as.innerHTML = '<iframe width="640" height="360" src="https://www.youtube.com/embed/' + results.results[0].key + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        //as.appendAfter(document.querySelector("body > div.container > div.movie-container > div.right > p:nth-child(3)"))
+			top.document.getElementById('if').setAttribute("src","https://www.youtube.com/embed/" + results.results[0].key);
+            document.querySelector("div.if").style.display = 'block'
         return results.results[0].key;
     });
 };

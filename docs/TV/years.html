@@ -1049,4 +1049,92 @@
         </div>
     </div>
 </body>
+</html>#GENRE_BUTTON_TEMPLATE_START#
+<a href="./#GENRE#.html" class="button-darkgray">#GENRE#</a>
+#GENRE_BUTTON_TEMPLATE_END#
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+        <filter id="gooey">
+            <!-- in="sourceGraphic" -->
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+            <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
+            <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+        </filter>
+    </defs>
+</svg>
+<div class="float">
+    <a href="https://rootkit-.github.io/Hoemovies/index.html">
+        <button id="gooey-button"> Switch to My Movies <span class="bubbles">
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+            </span>
+        </button>
+    </a>
+    <div class="link-buttons grayscale padder">
+        <a href="https://www.themoviedb.org" class="link-button">
+            <img src="../img/themoviedb.png">
+        </a>
+    </div>
+    <div class="link-buttons grayscale padder">
+        <a href="https://www.imdb.com" class="link-button">
+            <img src="../img/imdb.png">
+        </a>
+    </div>
+    <div class="link-buttons grayscale padder">
+        <a href="https://www.rottentomatoes.com" class="link-button">
+            <img src="../img/tomatoes.png">
+        </a>
+    </div>
+</div>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EMDB - Years</title>
+    <link href="../emdb.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+    <div id="top" class='containers'>
+        <div class="titles">
+            <span>H</span><span>o</span><span>e</span><span>&nbsp;T</span><span>V</span><span>&nbsp;S</span><span>h</span><span>o</span><span>w</span><span>s</span>
+        </div>
+        <div class="right">
+
+            <a href="../index.html" class="button-darkgray">Main Page</a>
+            <a href="../years.html" class="button-darkgray">Years</a>
+        </div>
+    </div>
+    <div id="top" class="container">
+
+        <div class="title">#GENRES_TITLE#</div>
+
+        <div class="header-buttons">
+            #GENRES_MENU#
+        </div>
+
+        <div class="header-green">
+            #CURRENT_GENRE#
+        </div>
+        <div class="bar">
+
+        </div>
+        <ul class="link-gray movie-list"></ul>
+
+        <div class="footer">
+            <p>Created with EMDB V5.17 (C) 2005-2023. No Rights Reserved ;-)</p>
+        </div>
+    </div>
+</body>
+
 </html>

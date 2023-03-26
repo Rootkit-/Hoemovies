@@ -6,6 +6,9 @@ body {
     margin: 0;
 
 }
+div.if{
+display:none;
+}
 a:link { text-decoration: none!important; }
 
 
