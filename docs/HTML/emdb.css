@@ -354,7 +354,7 @@ background-color:#00e5ff;
     background: #000000;
   color: white;
 	border: 1.5px solid #fff;
-  cursor: pointer;
+  cursor: none ;
     padding: 10px 4px 10px 4px;
   border-radius: 4px;
 }
@@ -637,6 +637,7 @@ ul.movie-list > li.thumbnail .thumbnail-text {
 }
 
  .titles {
+   cursor: default  ;
 	 display: flex;
 	 align-items: center;
 	 justify-content: center;
