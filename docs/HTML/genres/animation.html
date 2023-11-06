@@ -1,0 +1,573 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+        <filter id="gooey">
+            <!-- in="sourceGraphic" -->
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+            <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
+            <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+        </filter>
+    </defs>
+</svg>
+<div class="float">
+    <a href="./TV/index.html">
+        <button id="gooey-button"> Switch to My TV Shows <span class="bubbles">
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+            </span>
+        </button>
+    </a>
+    <div class="link-buttons grayscale padder">
+        <a href="https://www.themoviedb.org" class="link-button">
+            <img src="../img/themoviedb.png">
+        </a>
+    </div>
+    <div class="link-buttons grayscale padder">
+        <a href="https://www.imdb.com" class="link-button">
+            <img src="../img/imdb.png">
+        </a>
+    </div>
+    <div class="link-buttons grayscale padder">
+        <a href="https://www.rottentomatoes.com" class="link-button">
+            <img src="../img/tomatoes.png">
+        </a>
+    </div>
+</div>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EMDB - Genres - Animation</title>
+    <link href="../emdb.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="32x32.png"/>
+</head>
+
+<body>
+
+
+    <div id="top" class='containers'>
+        <div class="titles">
+            <span>H</span><span>o</span><span>e</span><span>&nbsp;T</span><span>V</span><span>&nbsp;S</span><span>h</span><span>o</span><span>w</span><span>s</span>
+        </div>
+        <div class="right">
+
+            <a href="../index.html" class="button-darkgray">Main Page</a>
+            <a href="../years.html" class="button-darkgray">Years</a>
+        </div>
+    </div>
+    <div id="top" class="container">
+
+        <div class="title">Movies per genre</div>
+
+        <div class="header-buttons">
+            <a href="./action.html" class="button-darkgray">Action</a><a href="./thriller.html" class="button-darkgray">Thriller</a><a href="./horror.html" class="button-darkgray">Horror</a><a href="./drama.html" class="button-darkgray">Drama</a><a href="./sci-fi.html" class="button-darkgray">Sci-Fi</a><a href="./music.html" class="button-darkgray">Music</a><a href="./comedy.html" class="button-darkgray">Comedy</a><a href="./adventure.html" class="button-darkgray">Adventure</a><a href="./war.html" class="button-darkgray">War</a><a href="./fantasy.html" class="button-darkgray">Fantasy</a><a href="./crime.html" class="button-darkgray">Crime</a><a href="./animation.html" class="button-darkgray">Animation</a><a href="./family.html" class="button-darkgray">Family</a><a href="./documentary.html" class="button-darkgray">Documentary</a><a href="./western.html" class="button-darkgray">Western</a><a href="./romance.html" class="button-darkgray">Romance</a><a href="./mystery.html" class="button-darkgray">Mystery</a><a href="./history.html" class="button-darkgray">History</a>
+        </div>
+
+        <div class="header-green">
+            Animation
+        </div>
+        <div class="bar">
+
+        </div>
+        <ul class="link-gray movie-list"><li class="thumbnail">
+    <a href="../movies/1281.html">
+        <div class="shiny-container">
+            <img src="../covers/001422.jpg" alt="poster Aladdin&nbsp;&nbsp;(1992)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Aladdin&nbsp;&nbsp;(1992) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/62.html">
+        <div class="shiny-container">
+            <img src="../covers/000069.jpg" alt="poster Alice in Wonderland&nbsp;&nbsp;(1951)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Alice in Wonderland&nbsp;&nbsp;(1951) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/819.html">
+        <div class="shiny-container">
+            <img src="../covers/000913.jpg" alt="poster The Aristocats&nbsp;&nbsp;(1970)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> The Aristocats&nbsp;&nbsp;(1970) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/111.html">
+        <div class="shiny-container">
+            <img src="../covers/000124.jpg" alt="poster Batman: The Killing Joke&nbsp;&nbsp;(2016)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Batman: The Killing Joke&nbsp;&nbsp;(2016) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/112.html">
+        <div class="shiny-container">
+            <img src="../covers/000125.jpg" alt="poster Batman: The Long Halloween, Part One&nbsp;&nbsp;(2021)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Batman: The Long Halloween, Part One&nbsp;&nbsp;(2021) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/118.html">
+        <div class="shiny-container">
+            <img src="../covers/000131.jpg" alt="poster Beowulf&nbsp;&nbsp;(2007)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Beowulf&nbsp;&nbsp;(2007) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/840.html">
+        <div class="shiny-container">
+            <img src="../covers/000935.jpg" alt="poster The Cat Returns&nbsp;&nbsp;(2002)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> The Cat Returns&nbsp;&nbsp;(2002) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/42.html">
+        <div class="shiny-container">
+            <img src="../covers/000047.jpg" alt="poster A Charlie Brown Christmas&nbsp;&nbsp;(1965)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> A Charlie Brown Christmas&nbsp;&nbsp;(1965) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/43.html">
+        <div class="shiny-container">
+            <img src="../covers/000048.jpg" alt="poster A Charlie Brown Thanksgiving&nbsp;&nbsp;(1973)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> A Charlie Brown Thanksgiving&nbsp;&nbsp;(1973) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/196.html">
+        <div class="shiny-container">
+            <img src="../covers/000209.jpg" alt="poster Cowboy Bebop: The Movie&nbsp;&nbsp;(2001)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Cowboy Bebop: The Movie&nbsp;&nbsp;(2001) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/278.html">
+        <div class="shiny-container">
+            <img src="../covers/000307.jpg" alt="poster Fantasia&nbsp;&nbsp;(1940)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Fantasia&nbsp;&nbsp;(1940) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/1257.html">
+        <div class="shiny-container">
+            <img src="../covers/001396.jpg" alt="poster Garfield&nbsp;&nbsp;(2004)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Garfield&nbsp;&nbsp;(2004) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/1258.html">
+        <div class="shiny-container">
+            <img src="../covers/001397.jpg" alt="poster Garfield: A Tail of Two Kitties&nbsp;&nbsp;(2006)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Garfield: A Tail of Two Kitties&nbsp;&nbsp;(2006) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/325.html">
+        <div class="shiny-container">
+            <img src="../covers/000358.jpg" alt="poster Ghost in the Shell&nbsp;&nbsp;(1995)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Ghost in the Shell&nbsp;&nbsp;(1995) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/380.html">
+        <div class="shiny-container">
+            <img src="../covers/000416.jpg" alt="poster Heavy Metal&nbsp;&nbsp;(1981)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Heavy Metal&nbsp;&nbsp;(1981) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/383.html">
+        <div class="shiny-container">
+            <img src="../covers/000419.jpg" alt="poster Hercules&nbsp;&nbsp;(1997)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Hercules&nbsp;&nbsp;(1997) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/405.html">
+        <div class="shiny-container">
+            <img src="../covers/000443.jpg" alt="poster How to Train Your Dragon&nbsp;&nbsp;(2010)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> How to Train Your Dragon&nbsp;&nbsp;(2010) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/406.html">
+        <div class="shiny-container">
+            <img src="../covers/000444.jpg" alt="poster How to Train Your Dragon 2&nbsp;&nbsp;(2014)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> How to Train Your Dragon 2&nbsp;&nbsp;(2014) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/407.html">
+        <div class="shiny-container">
+            <img src="../covers/000445.jpg" alt="poster How to Train Your Dragon: The Hidden World&nbsp;&nbsp;(2019)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> How to Train Your Dragon: The Hidden World&nbsp;&nbsp;(2019) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/417.html">
+        <div class="shiny-container">
+            <img src="../covers/000455.jpg" alt="poster I Want to Eat Your Pancreas&nbsp;&nbsp;(2018)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> I Want to Eat Your Pancreas&nbsp;&nbsp;(2018) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/439.html">
+        <div class="shiny-container">
+            <img src="../covers/000480.jpg" alt="poster It's Christmastime Again, Charlie Brown&nbsp;&nbsp;(1992)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> It's Christmastime Again, Charlie Brown&nbsp;&nbsp;(1992) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/441.html">
+        <div class="shiny-container">
+            <img src="../covers/000482.jpg" alt="poster It's Magic, Charlie Brown&nbsp;&nbsp;(1981)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> It's Magic, Charlie Brown&nbsp;&nbsp;(1981) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/1120.html">
+        <div class="shiny-container">
+            <img src="../covers/001445.jpg" alt="poster It's the Great Pumpkin, Charlie Brown&nbsp;&nbsp;(1966)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> It's the Great Pumpkin, Charlie Brown&nbsp;&nbsp;(1966) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/900.html">
+        <div class="shiny-container">
+            <img src="../covers/001004.jpg" alt="poster The Land Before Time&nbsp;&nbsp;(1988)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> The Land Before Time&nbsp;&nbsp;(1988) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/907.html">
+        <div class="shiny-container">
+            <img src="../covers/001011.jpg" alt="poster The Lion King&nbsp;&nbsp;(2019)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> The Lion King&nbsp;&nbsp;(2019) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/908.html">
+        <div class="shiny-container">
+            <img src="../covers/001012.jpg" alt="poster The Little Mermaid&nbsp;&nbsp;(1989)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> The Little Mermaid&nbsp;&nbsp;(1989) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/1106.html">
+        <div class="shiny-container">
+            <img src="../covers/001227.jpg" alt="poster Mavka: The Forest Song&nbsp;&nbsp;(2023)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Mavka: The Forest Song&nbsp;&nbsp;(2023) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/920.html">
+        <div class="shiny-container">
+            <img src="../covers/001025.jpg" alt="poster The Mayflower Voyagers&nbsp;&nbsp;(1988)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> The Mayflower Voyagers&nbsp;&nbsp;(1988) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/570.html">
+        <div class="shiny-container">
+            <img src="../covers/000644.jpg" alt="poster Moana&nbsp;&nbsp;(2016)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Moana&nbsp;&nbsp;(2016) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/573.html">
+        <div class="shiny-container">
+            <img src="../covers/000647.jpg" alt="poster Monsters, Inc.&nbsp;&nbsp;(2001)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Monsters, Inc.&nbsp;&nbsp;(2001) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/581.html">
+        <div class="shiny-container">
+            <img src="../covers/000655.jpg" alt="poster Mulan&nbsp;&nbsp;(1998)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Mulan&nbsp;&nbsp;(1998) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/584.html">
+        <div class="shiny-container">
+            <img src="../covers/000658.jpg" alt="poster My Neighbor Totoro&nbsp;&nbsp;(1988)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> My Neighbor Totoro&nbsp;&nbsp;(1988) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/936.html">
+        <div class="shiny-container">
+            <img src="../covers/001041.jpg" alt="poster The Nightmare Before Christmas&nbsp;&nbsp;(1993)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> The Nightmare Before Christmas&nbsp;&nbsp;(1993) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/655.html">
+        <div class="shiny-container">
+            <img src="../covers/000733.jpg" alt="poster Puss in Boots&nbsp;&nbsp;(2011)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Puss in Boots&nbsp;&nbsp;(2011) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/656.html">
+        <div class="shiny-container">
+            <img src="../covers/000734.jpg" alt="poster Puss in Boots: The Last Wish&nbsp;&nbsp;(2022)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Puss in Boots: The Last Wish&nbsp;&nbsp;(2022) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/663.html">
+        <div class="shiny-container">
+            <img src="../covers/000742.jpg" alt="poster Raya and the Last Dragon&nbsp;&nbsp;(2021)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Raya and the Last Dragon&nbsp;&nbsp;(2021) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/1282.html">
+        <div class="shiny-container">
+            <img src="../covers/001423.jpg" alt="poster The Return of Jafar&nbsp;&nbsp;(1994)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> The Return of Jafar&nbsp;&nbsp;(1994) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/695.html">
+        <div class="shiny-container">
+            <img src="../covers/000775.jpg" alt="poster Rudolph the Red-Nosed Reindeer&nbsp;&nbsp;(1964)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Rudolph the Red-Nosed Reindeer&nbsp;&nbsp;(1964) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/54.html">
+        <div class="shiny-container">
+            <img src="../covers/000059.jpg" alt="poster A Scanner Darkly&nbsp;&nbsp;(2006)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> A Scanner Darkly&nbsp;&nbsp;(2006) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/712.html">
+        <div class="shiny-container">
+            <img src="../covers/000793.jpg" alt="poster Scooby-Doo on Zombie Island&nbsp;&nbsp;(1998)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Scooby-Doo on Zombie Island&nbsp;&nbsp;(1998) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/1175.html">
+        <div class="shiny-container">
+            <img src="../covers/001304.jpg" alt="poster Scooby-Doo! Mystery Incorporated - Season 01-02&nbsp;&nbsp;(2010)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Scooby-Doo! Mystery Incorporated - Season 01-02&nbsp;&nbsp;(2010) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/744.html">
+        <div class="shiny-container">
+            <img src="../covers/000829.jpg" alt="poster Snow White and the Seven Dwarfs&nbsp;&nbsp;(1937)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Snow White and the Seven Dwarfs&nbsp;&nbsp;(1937) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/749.html">
+        <div class="shiny-container">
+            <img src="../covers/000834.jpg" alt="poster Soul&nbsp;&nbsp;(2020)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Soul&nbsp;&nbsp;(2020) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/1268.html">
+        <div class="shiny-container">
+            <img src="../covers/001409.jpg" alt="poster South Park the Streaming Wars Part 2&nbsp;&nbsp;(2022)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> South Park the Streaming Wars Part 2&nbsp;&nbsp;(2022) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/751.html">
+        <div class="shiny-container">
+            <img src="../covers/000836.jpg" alt="poster South Park: Bigger, Longer & Uncut&nbsp;&nbsp;(1999)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> South Park: Bigger, Longer & Uncut&nbsp;&nbsp;(1999) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/752.html">
+        <div class="shiny-container">
+            <img src="../covers/000838.jpg" alt="poster Space Jam&nbsp;&nbsp;(1996)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Space Jam&nbsp;&nbsp;(1996) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/758.html">
+        <div class="shiny-container">
+            <img src="../covers/000846.jpg" alt="poster Spirited Away&nbsp;&nbsp;(2001)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Spirited Away&nbsp;&nbsp;(2001) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/1109.html">
+        <div class="shiny-container">
+            <img src="../covers/001231.jpg" alt="poster The Super Mario Bros. Movie&nbsp;&nbsp;(2023)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> The Super Mario Bros. Movie&nbsp;&nbsp;(2023) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/797.html">
+        <div class="shiny-container">
+            <img src="../covers/000887.jpg" alt="poster Sword Art Online: The Movie &#8211; Ordinal Scale&nbsp;&nbsp;(2017)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Sword Art Online: The Movie &#8211; Ordinal Scale&nbsp;&nbsp;(2017) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/1274.html">
+        <div class="shiny-container">
+            <img src="../covers/001415.jpg" alt="poster Toy Story&nbsp;&nbsp;(1995)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Toy Story&nbsp;&nbsp;(1995) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/1275.html">
+        <div class="shiny-container">
+            <img src="../covers/001416.jpg" alt="poster Toy Story 2&nbsp;&nbsp;(1999)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Toy Story 2&nbsp;&nbsp;(1999) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/1276.html">
+        <div class="shiny-container">
+            <img src="../covers/001417.jpg" alt="poster Toy Story 3&nbsp;&nbsp;(2010)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Toy Story 3&nbsp;&nbsp;(2010) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/223.html">
+        <div class="shiny-container">
+            <img src="../covers/001197.jpg" alt="poster A Whisker Away&nbsp;&nbsp;(2020)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> A Whisker Away&nbsp;&nbsp;(2020) </div>
+    </a>
+</li>
+<li class="thumbnail">
+    <a href="../movies/1056.html">
+        <div class="shiny-container">
+            <img src="../covers/001170.jpg" alt="poster Who Framed Roger Rabbit&nbsp;&nbsp;(1988)" height="135">
+            <div class="shiny-frame"></div>
+        </div>
+        <div class="thumbnail-text"> Who Framed Roger Rabbit&nbsp;&nbsp;(1988) </div>
+    </a>
+</li>
+</ul>
+
+        <div class="footer">
+            <p>Created with EMDB V5.26 (C) 2005-2023. No Rights Reserved ;-)</p>
+        </div>
+    </div>
+</body>
+
+</html>
