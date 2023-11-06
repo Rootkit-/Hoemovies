@@ -9,6 +9,12 @@ body {
 div.if{
 /*display:none;*/
 }
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
 a:link { text-decoration: none!important; }
 
 
