@@ -11,9 +11,11 @@ div.if{
 }
 html {
   height: 100%;
+  cursor: pointer;
 }
 body {
   min-height: 100%;
+  cursor: pointer;
 }
 a:link { text-decoration: none!important; }
 
